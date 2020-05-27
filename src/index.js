@@ -1,15 +1,24 @@
 import React from 'react';
-import ReactDOM from 'react-dom';  
+import ReactDOM from 'react-dom';   
+import {Header} from './components/Header'
+import {Balance} from './components/Balance'
 
-let App = ()=>{
-  return   <h1> Hello World </h1>;
-};
+import './App.css'
 
-ReactDOM.render(
-  <React.StrictMode> 
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+const App = () => {
+  return (
+     <div> 
+      <Header />
+       <div className="container">
+        <Balance />
+       </div>   
+     </div>
+  )
+  }
+
+ReactDOM.render( 
+    <App /> ,
+  document.getElementById('root') 
 );
 
  
