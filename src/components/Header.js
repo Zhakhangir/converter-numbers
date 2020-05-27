@@ -9,3 +9,11 @@ const Header = () => {
 }
 
  export default Header;
+
+export const Header = () => {
+    return (
+        <h2>
+            Expence Tracker
+        </h2>
+    )
+}
